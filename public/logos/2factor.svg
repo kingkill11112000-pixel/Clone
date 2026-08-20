@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip"><rect width="64" height="64" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="64" height="64" fill="#dc2626"/>
+    <g fill="#ef4444" opacity="0.9">
+      <path d="M32 0l4 14h-8z"/>
+      <path d="M32 64l4-14h-8z"/>
+      <path d="M0 32l14-4v8z"/>
+      <path d="M64 32l-14-4v8z"/>
+      <path d="M9 9l12 6-6 6z"/>
+      <path d="M55 9l-12 6 6 6z"/>
+      <path d="M9 55l12-6-6-6z"/>
+      <path d="M55 55l-12-6 6-6z"/>
+      <path d="M32 6l3 10h-6z"/>
+      <path d="M58 32l-10 3v-6z"/>
+    </g>
+    <circle cx="32" cy="32" r="17" fill="#dc2626"/>
+    <text x="32" y="43" text-anchor="middle" font-family="Arial Black,Helvetica,sans-serif" font-size="30" font-weight="900" fill="#fff">2</text>
+  </g>
+</svg>
