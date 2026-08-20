@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
   <defs>
-    <linearGradient id="ccg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ccg" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#5CFFE1"/>
-      <stop offset="40%" stop-color="#2EE6C5"/>
+      <stop offset="45%" stop-color="#2EE6C5"/>
       <stop offset="100%" stop-color="#1BA8FF"/>
     </linearGradient>
   </defs>
-  <path d="M46 18 C 38 10, 22 8, 14 18 C 6 28, 8 44, 20 50 C 30 55, 42 50, 48 40 C 52 34, 50 28, 46 24" fill="none" stroke="url(#ccg)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M42 24 C 36 18, 24 18, 20 26 C 16 34, 20 42, 28 44 C 34 45.5, 40 42, 42 36" fill="none" stroke="url(#ccg)" stroke-width="5" stroke-linecap="round"/>
-  <path d="M38 28 C 34 25, 28 26, 26 30 C 24 34, 28 38, 32 38 C 35 38, 37 35, 37 32" fill="none" stroke="url(#ccg)" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="42" cy="20" r="3.8" fill="#5CFFE1"/>
-  <circle cx="38" cy="26" r="2.4" fill="#2EE6C5"/>
-  <circle cx="34.5" cy="31.5" r="1.5" fill="#1BA8FF"/>
+  <path d="M46 18 C38 10,22 8,14 18 C6 28,8 44,20 50 C30 55,42 50,48 40 C52 34,50 28,46 24" fill="none" stroke="url(#ccg)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M42 24 C36 18,24 18,20 26 C16 34,20 42,28 44 C34 45.5,40 42,42 36" fill="none" stroke="url(#ccg)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M38 28 C34 25,28 26,26 30 C24 34,28 38,32 38 C35 38,37 35,37 32" fill="none" stroke="url(#ccg)" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="42" cy="20" r="3.6" fill="#5CFFE1"/>
+  <circle cx="38" cy="26" r="2.3" fill="#2EE6C5"/>
+  <circle cx="34.5" cy="31.5" r="1.4" fill="#1BA8FF"/>
 </svg>
