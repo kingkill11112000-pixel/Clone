@@ -6,7 +6,6 @@ export function ResumeCard({
   logoUrl,
   alt,
   title,
-  company,
   subtitle,
   period,
   badge,
@@ -16,7 +15,6 @@ export function ResumeCard({
   logoUrl: string;
   alt: string;
   title: string;
-  company?: string;
   subtitle?: string;
   period: string;
   badge?: string;
@@ -51,9 +49,6 @@ export function ResumeCard({
                 <ExternalLink className="size-3.5 shrink-0 text-muted" />
               ) : null}
             </h3>
-            {company ? (
-              <p className="mt-0.5 text-sm font-medium text-fg/80">{company}</p>
-            ) : null}
             {subtitle ? (
               <p className="mt-1 text-sm leading-relaxed text-muted">{subtitle}</p>
             ) : null}
