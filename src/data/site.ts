@@ -78,14 +78,14 @@ export const DATA = {
   name: "Siddhant Pal",
   initials: "SP",
   url: "https://github.com/kingkill11112000-pixel",
-  location: "Mumbai, India",
+  location: "Thane, Maharashtra, India",
   description:
     "Computer Engineering student and Software Engineer at 2Factor. I build internal tools that automate real workflows across support, sales, and finance — from KYC platforms to DLT compliance tooling — and love turning operational pain points into maintainable software.",
   avatarUrl: "/pfp.jpg",
   taglines: ["software engineer", "building tools that remove busywork."],
   contact: {
     email: "siddhantpal9082@gmail.com",
-    tel: "",
+    tel: "+91-9076207761",
     social: {
       GitHub: {
         name: "GitHub",
@@ -198,7 +198,7 @@ export const DATA = {
     {
       school: "Thakur College of Engineering & Technology, University of Mumbai",
       href: "https://www.tcetmumbai.in",
-      degree: "Bachelor of Engineering in Computer Engineering",
+      degree: "Bachelor of Engineering in Computer Engineering · CGPI: 9.25",
       logoUrl: "/logos/tcet.svg",
       start: "2022",
       end: "2026",
@@ -206,7 +206,7 @@ export const DATA = {
     {
       school: "Satish Pradhan Dnyanasadhana College",
       href: "https://www.spdnyanasadhanacollege.org",
-      degree: "Higher Secondary School Certificate (HSC)",
+      degree: "Higher Secondary School Certificate (HSC) · 71.17%",
       logoUrl: "/logos/dnyanasadhana.svg",
       start: "2020",
       end: "2022",
