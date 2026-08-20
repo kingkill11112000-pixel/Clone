@@ -11,6 +11,7 @@ export type Skill = {
 
 export type WorkItem = {
   company: string;
+  title: string;
   href: string;
   logoUrl: string;
   start: string;
@@ -141,12 +142,13 @@ export const DATA = {
   work: [
     {
       company: "2Factor",
+      title: "Software Engineer (Full-time)",
       href: "https://2factor.in",
       logoUrl: "/logos/2factor.svg",
       start: "Aug 2026",
       end: "Present",
       description:
-        "Software Engineer (Full-time) · Mumbai. Building and maintaining internal tools that automate recurring workflows across support, sales, and finance at a CPaaS company. Developed a KYC Automation Platform using React 18, Vite, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, and Zustand — centralizing KYC link generation, reminders, and progress tracking. Built a DLT Template Comparison Tool that auto-detects mismatches between registered templates and outgoing messages, an Error Code Search Tool for support, and an Intelligent Enquiry Response System with WhatsApp CTA. Collaborating with teams to turn operational gaps into maintainable software; exploring AI-assisted automation where it adds practical value.",
+        "Building and maintaining internal tools that automate recurring workflows across support, sales, and finance at a CPaaS company. Developed a KYC Automation Platform using React 18, Vite, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, and Zustand — centralizing KYC link generation, reminders, and progress tracking. Built a DLT Template Comparison Tool that auto-detects mismatches between registered templates and outgoing messages, an Error Code Search Tool for support, and an Intelligent Enquiry Response System with WhatsApp CTA. Collaborating with teams to turn operational gaps into maintainable software; exploring AI-assisted automation where it adds practical value.",
       technologies: [
         "React",
         "TypeScript",
@@ -160,12 +162,13 @@ export const DATA = {
     },
     {
       company: "2Factor",
+      title: "Technical Support Engineer (Intern)",
       href: "https://2factor.in",
       logoUrl: "/logos/2factor.svg",
       start: "Jan 2026",
       end: "Jul 2026",
       description:
-        "Technical Support Engineer (Internship) · Worli, Mumbai. Supported customers and internal teams with technical issues involving SQL, APIs, DLT compliance, PE-TM chain mapping, and CPaaS integrations. Investigated API requests, delivery issues, configurations, and product-related problems for enterprise clients. Worked with WhatsApp Business messaging, SMS, and voice communication workflows, including template registration and onboarding. Identified recurring troubleshooting patterns and began building internal tools to address them at the root — work that directly led to a transition into a full-time Software Engineer role.",
+        "Supported customers and internal teams with technical issues involving SQL, APIs, DLT compliance, PE-TM chain mapping, and CPaaS integrations. Investigated API requests, delivery issues, configurations, and product-related problems for enterprise clients. Worked with WhatsApp Business messaging, SMS, and voice communication workflows, including template registration and onboarding. Identified recurring troubleshooting patterns and began building internal tools to address them at the root — work that directly led to a transition into a full-time Software Engineer role.",
       technologies: [
         "SQL",
         "Postman",
@@ -178,12 +181,13 @@ export const DATA = {
     },
     {
       company: "Codeclause",
+      title: "Web Developer Intern",
       href: "https://codeclause.com",
       logoUrl: "/logos/codeclause.svg",
       start: "Nov 2024",
       end: "Dec 2024",
       description:
-        "Web Developer Intern (Remote). Built an intelligent chatbot using the Gemini API, enabling context-aware conversations and multimodal image-based queries. Designed a highly responsive UI with dynamic response formatting, smooth animations, and robust error handling to enhance user engagement.",
+        "Built an intelligent chatbot using the Gemini API, enabling context-aware conversations and multimodal image-based queries. Designed a highly responsive UI with dynamic response formatting, smooth animations, and robust error handling to enhance user engagement.",
       technologies: [
         "Gemini API",
         "JavaScript",

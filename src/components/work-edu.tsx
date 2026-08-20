@@ -10,15 +10,18 @@ export function WorkExperience() {
       </BlurFade>
       <div className="mt-3 space-y-2">
         {DATA.work.map((job, i) => (
-          <BlurFade key={`${job.company}-${job.start}-${job.badges[0] ?? i}`} delay={0.2 + i * 0.04}>
+          <BlurFade
+            key={`${job.company}-${job.title}-${job.start}`}
+            delay={0.2 + i * 0.04}
+          >
             <ResumeCard
               href={job.href || undefined}
               logoUrl={job.logoUrl}
-              alt={job.company}
-              title={job.company}
+              alt={`${job.title} at ${job.company}`}
+              title={job.title}
+              company={job.company}
               subtitle={job.description}
-              period={`${job.start} - ${job.end}`}
-              badge={job.badges[0]}
+              period={`${job.start} – ${job.end}`}
               grotesk
             />
           </BlurFade>
@@ -43,7 +46,7 @@ export function Education() {
               alt={ed.school}
               title={ed.school}
               subtitle={ed.degree}
-              period={`${ed.start} - ${ed.end}`}
+              period={`${ed.start} – ${ed.end}`}
             />
           </BlurFade>
         ))}
