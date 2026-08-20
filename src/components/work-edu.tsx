@@ -10,7 +10,7 @@ export function WorkExperience() {
       </BlurFade>
       <div className="mt-3 space-y-2">
         {DATA.work.map((job, i) => (
-          <BlurFade key={job.company} delay={0.2 + i * 0.04}>
+          <BlurFade key={`${job.company}-${job.start}-${job.badges[0] ?? i}`} delay={0.2 + i * 0.04}>
             <ResumeCard
               href={job.href || undefined}
               logoUrl={job.logoUrl}
