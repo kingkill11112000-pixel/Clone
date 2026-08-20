@@ -63,6 +63,17 @@ export type OpenSourceOrg = {
   prs: { number: number; title: string; url: string }[];
 };
 
+import {
+  projects,
+  hackathons,
+  openSource,
+  photos,
+  videoComponents,
+  morphFrom,
+  morphTo,
+  roles,
+} from "./portfolio-tail";
+
 export const DATA = {
   name: "Dikshit Mahanot",
   initials: "DM",
@@ -132,7 +143,7 @@ export const DATA = {
     { name: "Bit Bucket", icon: "/svg/bitbucket.svg" },
     { name: "Figma", icon: "/svg/figma.svg" },
     { name: "Prometheus", icon: "/Prometheus.png" },
-    { name: "Grafana", icon: "/Grafana.png" },
+    { name: "Grafana", icon: "/svg/Grafana.png" },
     { name: "PostgreSQL", icon: "/svg/postgresql.svg" },
     { name: "Socket.io", icon: "/svg/socket.svg" },
     { name: "Shadcn UI", icon: "/svg/shad.svg" },
@@ -199,3 +210,20 @@ export const DATA = {
       end: "2021",
     },
   ] satisfies EducationItem[],
+  projects,
+  hackathons,
+  openSource,
+  photos,
+  videoComponents,
+  morphFrom,
+  morphTo,
+  roles,
+};
+
+export const webProjects = DATA.projects.filter(
+  (p) => p.kind === "web" && p.shouldShow,
+);
+export const mobileProjects = DATA.projects.filter((p) => p.kind === "mobile");
+export const marqueeProjects = DATA.projects.filter(
+  (p) => p.kind === "web" && p.image,
+);
