@@ -25,7 +25,7 @@ export function ResumeCard({
       <img
         src={logoUrl}
         alt=""
-        className="size-12 shrink-0 object-contain"
+        className="size-14 shrink-0 object-contain"
       />
       <div className="min-w-0 flex-1">
         <div className="flex items-start justify-between gap-3">

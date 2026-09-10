@@ -1,7 +1,53 @@
+import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { BlurFade } from "@/components/blur-fade";
 import { ResumeCard } from "@/components/resume-card";
-import { DATA } from "@/data/site";
+import { DATA, type WorkRole } from "@/data/site";
+
+const PREVIEW_BULLETS = 2;
+
+function RoleDetails({ role }: { role: WorkRole }) {
+  const [open, setOpen] = useState(false);
+  const canToggle = role.bullets.length > PREVIEW_BULLETS;
+  const bullets = open || !canToggle ? role.bullets : role.bullets.slice(0, PREVIEW_BULLETS);
+
+  return (
+    <>
+      <ul className="mt-2 space-y-1.5">
+        {bullets.map((bullet) => (
+          <li
+            key={bullet.slice(0, 48)}
+            className="flex gap-2 text-sm leading-relaxed text-muted"
+          >
+            <span className="mt-2 size-1 shrink-0 rounded-full bg-muted" />
+            <span>{bullet}</span>
+          </li>
+        ))}
+      </ul>
+      {canToggle ? (
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          className="mt-1.5 text-sm font-medium text-fg underline-offset-4 hover:underline"
+        >
+          {open ? "less" : "more"}
+        </button>
+      ) : null}
+      {open || !canToggle ? (
+        <div className="mt-2.5 flex flex-wrap gap-1">
+          {role.technologies.map((t) => (
+            <span
+              key={t}
+              className="rounded-md bg-fg/5 px-1.5 py-0.5 text-[10px] font-medium text-fg/70"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+      ) : null}
+    </>
+  );
+}
 
 export function WorkExperience() {
   return (
@@ -31,7 +77,7 @@ export function WorkExperience() {
                   <img
                     src={job.logoUrl}
                     alt=""
-                    className="size-12 shrink-0 object-contain"
+                    className="size-14 shrink-0 object-contain"
                   />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-start justify-between gap-3">
@@ -65,27 +111,7 @@ export function WorkExperience() {
                           <p className="text-sm text-muted">{role.location}</p>
                         </div>
                       </div>
-                      <ul className="mt-2 space-y-1.5">
-                        {role.bullets.map((bullet) => (
-                          <li
-                            key={bullet.slice(0, 48)}
-                            className="flex gap-2 text-sm leading-relaxed text-muted"
-                          >
-                            <span className="mt-2 size-1 shrink-0 rounded-full bg-muted" />
-                            <span>{bullet}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="mt-2.5 flex flex-wrap gap-1">
-                        {role.technologies.map((t) => (
-                          <span
-                            key={t}
-                            className="rounded-md bg-fg/5 px-1.5 py-0.5 text-[10px] font-medium text-fg/70"
-                          >
-                            {t}
-                          </span>
-                        ))}
-                      </div>
+                      <RoleDetails role={role} />
                     </li>
                   ))}
                 </ol>
