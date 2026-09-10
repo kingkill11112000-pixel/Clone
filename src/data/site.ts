@@ -377,27 +377,27 @@ export const DATA = {
   openSource: [
     {
       name: "NPTEL ML",
-      href: "https://nptel.ac.in",
+      href: "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS101S55350141304308593",
       imageSrc: "/logos/nptel.svg",
       color: "cloudinary",
       prs: [
         {
           number: 1,
           title: "Introduction to Machine Learning — NPTEL",
-          url: "https://nptel.ac.in",
+          url: "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS101S55350141304308593",
         },
       ],
     },
     {
       name: "NPTEL DL",
-      href: "https://nptel.ac.in",
+      href: "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS21S105230191404298578",
       imageSrc: "/logos/nptel.svg",
       color: "dodo",
       prs: [
         {
           number: 1,
           title: "Deep Learning — NPTEL",
-          url: "https://nptel.ac.in",
+          url: "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS21S105230191404298578",
         },
       ],
     },
